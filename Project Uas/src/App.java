@@ -153,16 +153,16 @@ public class App {
                 if (opsi.equals("1")) {
                     System.out.println("Input Data Pemesan Baru");
                     System.out.println("----------------------");
-                    System.out.print("Nama : ");
+                    System.out.print("Nama             : ");
                     String nama = keyboard.nextLine();
                     nama+=keyboard.nextLine();
-                    System.out.print("Alamat: ");
+                    System.out.print("Alamat           : ");
                     String alamat = keyboard.nextLine();
-                    System.out.print("No Telepon      : ");
+                    System.out.print("No Telepon       : ");
                     String notelp = keyboard.nextLine();
                     System.out.print("Jenis Kamar      : ");
                     String kamar = keyboard.nextLine();
-                    System.out.print("Durasi      : ");
+                    System.out.print("Durasi           : ");
                     int durasi = keyboard.nextInt();
                     p.add(new pemesan(nama, alamat, notelp, kamar, durasi));
                 }
@@ -180,11 +180,11 @@ public class App {
                             clearScreen();
                             System.out.println("Data Pemesan");
                             System.out.println("----------------");
-                            System.out.println("Nama  : " + p.get(idx).getNama());
-                            System.out.println("Alamat  : " + p.get(idx).getAlamat());
-                            System.out.println("No Telepon   : " + p.get(idx).getNotelp());
-                            System.out.println("Alamat  : " + p.get(idx).getKamar());
-                            System.out.println("No Telepon   : " + p.get(idx).getDurasi());
+                            System.out.println("Nama           : " + p.get(idx).getNama());
+                            System.out.println("Alamat         : " + p.get(idx).getAlamat());
+                            System.out.println("No Telepon     : " + p.get(idx).getNotelp());
+                            System.out.println("Alamat         : " + p.get(idx).getKamar());
+                            System.out.println("No Telepon     : " + p.get(idx).getDurasi());
                         }
                     }
                     else {
@@ -218,13 +218,13 @@ public class App {
                     if (opsi.equals("1")) {
                         System.out.println("Input Pembayaran");
                         System.out.println("--------------------");
-                        System.out.print("Kode      : ");
+                        System.out.print("Kode              : ");
                         String kode = keyboard.next();
-                        System.out.print("Durasi      : ");
+                        System.out.print("Durasi            : ");
                         int durasi = keyboard.nextInt();
-                        System.out.print("Biaya Penginapan : ");
+                        System.out.print("Biaya Penginapan  : ");
                         int penginapan = keyboard.nextInt();
-                        System.out.print("Biaya Tambahan       : ");
+                        System.out.print("Biaya Tambahan    : ");
                         int tambahan = keyboard.nextInt();
                         py.add(new pembayaran( kode, durasi, penginapan, tambahan  ));
                     }
@@ -242,10 +242,10 @@ public class App {
                                 clearScreen();
                                 System.out.println("Data Pembayaran");
                                 System.out.println("--------------");
-                                System.out.println("Kode         : " + py.get(idx).getKode());
-                                System.out.println("Durasi         : " + py.get(idx).getDurasi());
-                                System.out.println("Biaya Penginapan      : " + py.get(idx).getPenginapan());
-                                System.out.println("Biaya Tambahan   : " + py.get(idx).getTambahan());
+                                System.out.println("Kode              : " + py.get(idx).getKode());
+                                System.out.println("Durasi            : " + py.get(idx).getDurasi());
+                                System.out.println("Biaya Penginapan  : " + py.get(idx).getPenginapan());
+                                System.out.println("Biaya Tambahan    : " + py.get(idx).getTambahan());
                             }
                         }
                         else {
@@ -319,17 +319,17 @@ public class App {
                     if (opsi.equals("1")) {
                         System.out.println("Input Status");
                         System.out.println("--------------------");
-                        System.out.print("Kode Status     : ");
+                        System.out.print("Kode Status         : ");
                         String kode = keyboard.next();
-                        System.out.print("Metode Pembayaran     : ");
+                        System.out.print("Metode Pembayaran   : ");
                         String metode = keyboard.next();
-                        System.out.print("Jenis kamar     : ");
+                        System.out.print("Jenis kamar         : ");
                         String jenis = keyboard.next();
-                        System.out.print("Kode kamar     : ");
+                        System.out.print("Kode kamar          : ");
                         String kodek = keyboard.next();
-                        System.out.print("Status     : ");
+                        System.out.print("Status              : ");
                         String status = keyboard.next();
-                        System.out.print("Durasi      : ");
+                        System.out.print("Durasi              : ");
                         String durasi = keyboard.next();
                         sts.add(new status( kode, metode, jenis, kodek, status, durasi  ));
                     }
@@ -347,12 +347,12 @@ public class App {
                                 clearScreen();
                                 System.out.println("Data Pembayaran");
                                 System.out.println("--------------");
-                                System.out.println("Kode         : " + sts.get(idx).getKode());
+                                System.out.println("Kode           : " + sts.get(idx).getKode());
                                 System.out.println("Metode         : " + sts.get(idx).getMetode());
-                                System.out.println("Jenis        : " + sts.get(idx).getKeterangan());
-                                System.out.println("Kode kamar         : " + sts.get(idx).getKodek());
-                                System.out.println("Status      : " + sts.get(idx).getStatus());
-                                System.out.println("Durasi  : " + sts.get(idx).getDurasi());
+                                System.out.println("Jenis          : " + sts.get(idx).getKeterangan());
+                                System.out.println("Kode kamar     : " + sts.get(idx).getKodek());
+                                System.out.println("Status         : " + sts.get(idx).getStatus());
+                                System.out.println("Durasi         : " + sts.get(idx).getDurasi());
                             }
                         }
                         else {
