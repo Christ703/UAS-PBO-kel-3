@@ -338,7 +338,7 @@ public class App {
                         System.out.println("--------------------");
                         System.out.print("Masukkan Kode : ");
                         String kode = keyboard.next();
-                        if (py.size()>0) {
+                        if (sts.size()>0) {
                             int idx = getIndexFromStatus(sts, kode);
                             if (idx == -1) {
                                 System.out.println("Nama yang Anda masukkan invalid");
