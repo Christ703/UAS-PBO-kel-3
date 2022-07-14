@@ -1,6 +1,5 @@
 public class status {
     private String metode,status,durasi,keterangan,kode,kodek;
-    private kamar kamar;
 
     public status() {
     }
@@ -61,14 +60,6 @@ public class status {
 
     public void setKodek(String kodek) {
         this.kodek = kodek;
-    }
-
-    public kamar getKamar() {
-        return this.kamar;
-    }
-
-    public void setKamar(kamar kamar) {
-        this.kamar = kamar;
     }
    
     public void tampilkanstatus() {
