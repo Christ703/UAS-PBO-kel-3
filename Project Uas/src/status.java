@@ -1,6 +1,7 @@
 public class status {
+   public class status {
     private String metode,status,durasi,keterangan,kode,kodek;
-    private kamar kamar;
+   
 
     public status() {
     }
@@ -63,21 +64,9 @@ public class status {
         this.kodek = kodek;
     }
 
-    public kamar getKamar() {
-        return this.kamar;
-    }
+    
+}
 
-    public void setKamar(kamar kamar) {
-        this.kamar = kamar;
-    }
-   
-    public void tampilkanstatus() {
-        System.out.println("Kode Pembayaran        : " + kode);
-        System.out.println("Metode Pembayaran        : " + metode);
-        System.out.println("Jenis Kamar     :  "+kamar.class);
-        System.out.println("Kode Kamar     :  "+kamar.getKode());
-        System.out.println("Status : " + status);
-        System.out.println("Durasi     : " + durasi);
-    }    
+    
 
 }
